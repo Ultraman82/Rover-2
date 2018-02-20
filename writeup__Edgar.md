@@ -6,16 +6,17 @@ The writeup / README should include a statement and supporting figures / images 
 Describe in your writeup (and identify where in your code) how you modified or added functions to add obstacle and rock sample identification.
 
  1.  Calibrate images to convert rover views to  'top-down' map image. And warp them with cv2.getPerspectiveTransform, cv2.warpPerspective in def perspect_transform. Within the process, I put the the coordinates of grid vertexes.
+ ![image](output/warped_example.jpg)
+ 
+ 
  
  2. To define navigable terrain, used color threshold method. After creating empty array of image array which has same size of the orginal image,  applied brightness threshold of 160 on each RGB chanel. With that process, we can make binary image of navigable terrain. And for rock sample, I used specific RGB boundary of 110, 110, 50.
  Those are used in def color_thresh and def find_rocks.
+ ![image](output/warped_threshed.jpg)
  
  
-![image](output/warped_example.jpg)
-
-
-
-
+ ![image](output/rocks_threshed.png)
+  
 
 #### 1. Populate the `process_image()` function with the appropriate analysis steps to map pixels identifying navigable terrain, obstacles and rock samples into a worldmap.  Run `process_image()` on your test data using the `moviepy` functions provided to create video output of your result. 
 
@@ -44,9 +45,10 @@ Describe in your writeup how you modified the process_image() to demonstrate you
      rock_map = find_rocks(warped, levels = (110,110,50))
      if rock_map.any():
  
- 
+ rocks_threshed.png
 
-  
+
+ ![image](output/processed.png)
   
 ![alt text][image2]
 ### Autonomous Navigation and Mapping
