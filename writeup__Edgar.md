@@ -114,24 +114,32 @@ perception_step() and decision_step() functions have been filled in and their fu
       Rover.vision_image[:,:,1] = rock_map = 255
       
 #Decision Step()
+
  First, it checks if there is a data from the vision.
+ 
   Yes = It checks the rover is forward mode.
+  
       Yes = It checks there is enough nevigable terrain.
+      
           Yes = It checks the speed is max
+          
               Yes = Keep moving(throttle = 0) within +_ 15 angle adjustment 
+              
               No  = Set throttle value to throttle setting
+              
           No = Stop
+          
       No = It checkes the velocity of the rover is faster than 0.2
+      
           Yes = Keep trying to stop
+          
           No = It checks if there's a path forward.
+          
               Yes = Start to go forward
+              
               No = Turn around
               
 #### 2. Launching in autonomous mode your rover can navigate and map autonomously.  Explain your results and how you might improve them in your writeup. 
-By running drive_rover.pyand launching the simulator in autonomous mode, your rover does a reasonably good job at mapping the environment.
-
-The rover must map at least 40% of the environment with 60% fidelity (accuracy) against the ground truth. You must also find (map) the location of at least one rock sample. They don't need to pick any rocks up, just have them appear in the map (should happen automatically if their map pixels in Rover.worldmap[:,:,1] overlap with sample locations.)
-
 
 
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
