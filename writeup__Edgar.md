@@ -129,8 +129,8 @@ The rover must map at least 40% of the environment with 60% fidelity (accuracy) 
 
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
+![video](output/out.ogv)
 
 
-![alt text][image3]
 
 
