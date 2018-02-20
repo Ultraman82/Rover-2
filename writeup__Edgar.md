@@ -18,6 +18,7 @@ Describe in your writeup (and identify where in your code) how you modified or a
  
  2. To define navigable terrain, used color threshold method. After creating empty array of image array which has same size of the orginal image,  applied brightness threshold of 160 on each RGB chanel. With that process, we can make binary image of navigable terrain. And for rock sample, I used specific RGB boundary of 110, 110, 50.
  Those are used in def color_thresh and def find_rocks.
+ 
  ![image](output/warped_threshed.jpg)
  
  
