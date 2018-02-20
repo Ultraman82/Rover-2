@@ -1,13 +1,7 @@
 ## Project: Search and Sample Return
 
-# Videos
-- [Notebook Analysis Output Video](https://github.com/Ultraman82/Rover-2/tree/master/output/test_mapping.mp4)
-- [Screen Recording (ogv)(https://github.com/Ultraman82/Rover-2/tree/master/output/out.ogv)
-
 
 ### Notebook Analysis
-#### 1. Run the functions provided in the notebook on test images (first with the test data provided, next on data you have recorded). Add/modify functions to allow for color selection of obstacles and rock samples
-Describe in your writeup (and identify where in your code) how you modified or added functions to add obstacle and rock sample identification.
 
  1. Import rover camera images with the matplotlib.image library.
   Images are saved in an array with each pixel's X and Y postition, and it's RGB (3 channel) value. 
@@ -20,7 +14,7 @@ Describe in your writeup (and identify where in your code) how you modified or a
 ![image](output/warped_example.jpg)
  
  
- 4. To define the navigable terrain, I used the color threshold method. After creating an empty array the same size of the original image, I applied a brightness threshold of 160 on each RGB channel. With that, we can make a binary image of the navigable terrain. And as for the rock sample, I used the specific RGB values of 110, 110, and 50.
+ 4. To define the navigable terrain, I used the color threshold method. After creating an empty array the same size of the original image, I applied a brightness threshold of 160 on each RGB channel. With that, we can make a binary image of the navigable terrain. And as for the rock sample, I used the specific RGB boundries of 110, 110, and 50.
  These are used in 'color_thresh()' and 'find_rocks()'.
  
  
@@ -59,7 +53,8 @@ threshed = color_thresh(warped)
      if rock_map.any():
  
  ![image](output/processed.png)
-  
+
+- Notebook Analysis Output Video (https://github.com/Ultraman82/Rover-2/tree/master/output/test_mapping.mp4)
 
 ### Autonomous Navigation and Mapping
 
