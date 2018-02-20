@@ -149,7 +149,7 @@ perception_step() and decision_step() functions have been filled in and their fu
 - Sometimes the rover loops around a large area several times before going to a new path, try to avoid getting into this scenario.
 
 - This course was my very first course of robotics. Not just robotics, but also in english based a paper is necessary course.
- So, lots of things were quite confusing, that i could almost nothing but follow the course work pass through video. Even on those simple task, I faced many obstacles to make the cord have te same result as the video. I put tons of time but the dead line is close, so it was inevitable to submit the writeup as clumsy state. But still, it was quite fun process and I hope to get better on next project and develope this project to pick up the rocks.
+ So, lots of things were quite confusing, that i could almost nothing but follow the course work pass through video. Even on those simple task, I faced many obstacles to make the cord have the same result as the video. I put tons of time but the dead line is near, so it was inevitable to submit the writeup as clumsy state. But still, it was quite fun process and I hope to get better on next project and develope this project to pick up the rocks.
 
 ![video](output/out.ogv)
 
