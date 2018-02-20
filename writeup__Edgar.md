@@ -62,12 +62,12 @@ Describe in your writeup how you modified the process_image() to demonstrate you
 #### 1. Fill in the `perception_step()` (at the bottom of the `perception.py` script) and `decision_step()` (in `decision.py`) functions in the autonomous mapping scripts and an explanation is provided in the writeup of how and why these functions were modified as they were.
 perception_step() and decision_step() functions have been filled in and their functionality explained in the writeup.
 
-#Perception_step()
+## Perception_step()
 
  - Apply perspective transform 
- warped,mask = perspect_transform(Rover.img, source, destination)
+    warped,mask = perspect_transform(Rover.img, source, destination)
  
- -  Apply color threshold to identify navigable terrain/obstacles
+ - Apply color threshold to identify navigable terrain/obstacles
     threshed = color_thresh(warped)
     obs_map = np.absolute(np.float32(threshed) - 1)  *  mask
     
@@ -112,7 +112,7 @@ perception_step() and decision_step() functions have been filled in and their fu
       Rover.worldmap[rock_ycen, rock_xcen, 1] = 255
       Rover.vision_image[:,:,1] = rock_map = 255
       
-#Decision Step()
+## Decision Step()
 
  First, it checks if there is a data from the vision.
  
@@ -140,11 +140,16 @@ perception_step() and decision_step() functions have been filled in and their fu
               
 #### 2. Launching in autonomous mode your rover can navigate and map autonomously.  Explain your results and how you might improve them in your writeup. 
 
+- There are some cases that the rover gets stuck but isn't detected by our pipeline, investigate these cases and check how to detect them
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+- There are some cases that the rover gets stuck but can't get out using a turning method, I will try to make a new mode.
+
+- The rover wanders around without considering if it has already went through that path before. Need to make the rover consider the path was already taken or not.
+
+- Sometimes the rover loops around a large area several times before going to a new path, try to avoid getting into this scenario.
+
+- This course was my very first course of robotics. Not just robotics, but also in english based a paper is necessary course.
+ So, lots of things were quite confusing, that i could almost nothing but follow the course work pass through video. Even on those simple task, I faced many obstacles to make the cord have te same result as the video. I put tons of time but the dead line is close, so it was inevitable to submit the writeup as clumsy state. But still, it was quite fun process and I hope to get better on next project and develope this project to pick up the rocks.
 
 ![video](output/out.ogv)
-
-
-
 
