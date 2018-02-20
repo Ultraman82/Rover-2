@@ -4,7 +4,7 @@ The writeup / README should include a statement and supporting figures / images 
 
 # Videos
 - [Notebook Analysis Output Video](https://github.com/Ultraman82/Rover-2/tree/master/output/test_mapping.mp4)
-- [Screen Recording (with latency, so rover wobbles)](https://github.com/Ultraman82/Rover-2/tree/master/output/out.ogv)
+- [Screen Recording (ogv)(https://github.com/Ultraman82/Rover-2/tree/master/output/out.ogv)
 
 
 ### Notebook Analysis
