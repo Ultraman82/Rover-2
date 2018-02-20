@@ -1,6 +1,12 @@
 ## Project: Search and Sample Return
 The writeup / README should include a statement and supporting figures / images that explain how each rubric item was addressed, and specifically where in the code each step was handled.
 
+
+# Videos
+- [Notebook Analysis Output Video](https://github.com/Ultraman82/Rover-2/tree/master/output/test_mapping.mp4)
+- [Screen Recording (with latency, so rover wobbles)](https://github.com/Ultraman82/Rover-2/tree/master/output/out.ogv)
+
+
 ### Notebook Analysis
 #### 1. Run the functions provided in the notebook on test images (first with the test data provided, next on data you have recorded). Add/modify functions to allow for color selection of obstacles and rock samples
 Describe in your writeup (and identify where in your code) how you modified or added functions to add obstacle and rock sample identification.
